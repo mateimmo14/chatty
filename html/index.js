@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
             text = document.getElementById("chat");
             button = document.getElementById("sendbutton");
             input = document.getElementById("message");
-            ws = new WebSocket(`ws://${window.location.host}/connect`);
+            ws = new WebSocket(`wss://${window.location.host}/connect`);
             ws.onmessage = (event) => {
                 text.textContent += event.data;
             };
