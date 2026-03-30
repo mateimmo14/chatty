@@ -25,6 +25,6 @@ func main() {
 		go client.WritePump(r.Context())
 		client.ReadPump(r.Context())
 	})
-	mux.Handle("/", http.FileServer(http.Dir("html")))
+	mux.Handle("/", http.FileServer(http.Dir("/home/ubuntu/chatty/html")))
 	http.ListenAndServe(":8080", mux)
 }
