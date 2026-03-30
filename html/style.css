@@ -1,0 +1,45 @@
+body {
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    margin: 14px;
+}
+textarea {
+    height: 50vh;
+    width: 70vh;
+}
+#message {
+    width: 50vh;
+    height: 10vh;
+    border-radius: 14px;
+}
+#sendbutton {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+}
+#sendbutton:active {
+    transform: translateY(+1px );
+    box-shadow: 0 12px 24px
+    #D85A30;
+}
+
+.item {
+    background-color: #242424;
+    color: lightgray;
+    border-radius: 2%;
+    border: none;
+    outline: none;
+    resize: none;
+    box-shadow: 0 6px 16px #D85A30;
+    transition: transform 0.2s,
+    box-shadow 0.2s;
+}
+.item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px
+    #D85A30;
+}
