@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"nhooyr.io/websocket"
@@ -26,5 +27,5 @@ func main() {
 		client.ReadPump(r.Context())
 	})
 	mux.Handle("/", http.FileServer(http.Dir("/home/ubuntu/chatty/html")))
-	http.ListenAndServe(":8080", mux)
+	log.Fatal(http.ListenAndServe(":8080", mux))
 }
